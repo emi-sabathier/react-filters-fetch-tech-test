@@ -1,6 +1,6 @@
 import React, { ChangeEvent, ReactElement, useState } from 'react';
 import data from './data/news.json';
-import './styles/App.css';
+import './styles/app.css';
 import { NewsCard } from './components/NewsCard';
 import { AddNews } from './components/AddNews';
 import { deduplicateValues } from './utils/deduplicateValues';
