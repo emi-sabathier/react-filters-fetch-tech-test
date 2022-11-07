@@ -12,12 +12,15 @@ export const NewsCard = ({ newsItem }: NewsCardProps): ReactElement => {
     const defaultImage = (e: SyntheticEvent<HTMLImageElement>) => {
         (e.target as HTMLImageElement).src = defaultImagePath;
     };
-    const { title, text, category } = newsItem;
+    const { title, text, category, date } = newsItem;
 
     return (
         <article className="card-style">
             <h2>{title}</h2>
-            <h3>{category}</h3>
+            <div className="cat-date-container">
+                <h3>{category}</h3>
+                <h3>{date}</h3>
+            </div>
             <p>{text}</p>
             {images && images.length > 0 ? (
                 <figure>

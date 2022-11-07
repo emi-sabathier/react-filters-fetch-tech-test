@@ -28,8 +28,9 @@ const App = () => {
 
     return (
         <>
-            <AddNews />
             <div className="filter-container">
+                <h1>Bienvenue sur ce test technique</h1>
+                <AddNews />
                 <p>Filtrer par catégorie et date</p>
                 <select
                     className="select-style"
